@@ -51,10 +51,22 @@ public class Biblioteca{
     //////////////////////////////////////////////////////////////////////////////
 
     public void addEmprestimo(Emprestimo emprestimo){
-    
+        
     }
 
-    public void imprimir(){
+    public void imprimirTodosEmprestimos(){
+        System.out.println("");
+    }
+
+    public void imprimirEmprestimosUsuarios(){
+        System.out.println("");
+    }
+
+    public void imprimirLivrosEmprestados(){
+        System.out.println("");
+    }
+
+    public void imprimirNotebooksEmprestados(){
         System.out.println("");
     }
 }

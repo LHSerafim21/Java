@@ -1,5 +1,6 @@
 package sistema_biblioteca;
 
+import java.util.Date;
 import java.util.ArrayList;
 
 public class Emprestimo{
@@ -7,11 +8,15 @@ public class Emprestimo{
     private int codigoEmprestimo;
     private int codigoUsuario;
     private ArrayList<Item> Item;
+    private Date dataEmprestimo;
+    private Date dataDevolucao;
 
-    Emprestimo(int codigoEmprestimo, int codigoUsuario, ArrayList<Item> Item){
+    Emprestimo(int codigoEmprestimo, int codigoUsuario, ArrayList<Item> Item, Date dataDevolucao, Date dataEmprestimo){
         this.codigoEmprestimo = codigoEmprestimo;
         this.codigoUsuario = codigoUsuario;
         this.Item = Item;
+        this.dataEmprestimo = dataEmprestimo;
+        this.dataDevolucao =  dataDevolucao;
     }
 
     public int getCodigoEmprestimo(){
@@ -38,21 +43,25 @@ public class Emprestimo{
         this.Item = Item;
     }
 
+    public Date getDataEmprestimo(){
+        return dataEmprestimo;
+    }
+
+    public void setDataEmprestimo(Date dataEmprestimo){
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public Date getDataDevolucao(){
+        return dataDevolucao;
+    }
+
+    public void setDataDevolucao(Date dataDevolucao){
+        this.dataDevolucao = dataDevolucao;
+    }
+
     ///////////////////////////////////////////////////////////////////////////
 
     public void CalcularDataDevolucao(int CodigoUsuario){
-
-        if(CodigoUsuario == 01){
-
-        }
-
-        if(CodigoUsuario == 02){
-            
-        }
-
-        if(CodigoUsuario == 03){
-            
-        }
 
     }
 }
