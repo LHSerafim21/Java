@@ -62,6 +62,17 @@ public class Emprestimo{
     ///////////////////////////////////////////////////////////////////////////
 
     public void CalcularDataDevolucao(int CodigoUsuario){
+        if(CodigoUsuario == 01){
 
+        }
+        
+        if(CodigoUsuario == 02){
+
+        }
+    
+        if(CodigoUsuario == 03){
+
+        }
+    
     }
 }

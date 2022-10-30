@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Biblioteca{
 
     private String nome;
-    private ArrayList<Item> Item;
-    private ArrayList<Usuario> Usuario;
+    private ArrayList<Item> item;
+    private ArrayList<Usuario> usuario;
     private ArrayList<Emprestimo> Emprestimo;
 
-    Biblioteca(String nome, ArrayList<Item> Item, ArrayList<Usuario> Usuario, ArrayList<Emprestimo> Emprestimo){
+    Biblioteca(String nome, ArrayList<Item> item, ArrayList<Usuario> usuario, ArrayList<Emprestimo> Emprestimo){
         this.nome = nome;
-        this.Item = Item;
-        this.Usuario = Usuario;
+        this.item = item;
+        this.usuario = usuario;
         this.Emprestimo = Emprestimo;
     }
 
@@ -25,19 +25,19 @@ public class Biblioteca{
     }
 
     public ArrayList<Item> getItem(){
-        return Item;
+        return item;
     }
 
-    public void setItem(ArrayList<Item> Item){
-        this.Item = Item;
+    public void setItem(ArrayList<Item> item){
+        this.item = item;
     }
 
     public ArrayList<Usuario> getUsuario(){
-        return Usuario;
+        return usuario;
     }
 
-    public void setUsuario(ArrayList<Usuario> Usuario){
-        this.Usuario = Usuario;
+    public void setUsuario(ArrayList<Usuario> usuario){
+        this.usuario = usuario;
     }
 
     public ArrayList<Emprestimo> getEmprestimo(){
@@ -51,11 +51,12 @@ public class Biblioteca{
     //////////////////////////////////////////////////////////////////////////////
 
     public void addEmprestimo(Emprestimo emprestimo){
-        
+        this.Emprestimo.add(emprestimo);
+        System.out.println("Emprestimo Feito!!");
     }
 
-    public void imprimirTodosEmprestimos(){
-        System.out.println("");
+    public void imprimirTodosEmprestimos(Emprestimo emprestimo){
+        System.out.println("\nInformações" + this.Emprestimo);
     }
 
     public void imprimirEmprestimosUsuarios(){
@@ -63,7 +64,7 @@ public class Biblioteca{
     }
 
     public void imprimirLivrosEmprestados(){
-        System.out.println("");
+        System.out.println("Livros Emprestado: ");
     }
 
     public void imprimirNotebooksEmprestados(){
