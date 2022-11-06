@@ -16,8 +16,7 @@ Venda:
 StringToString  						////FEITO, VERIFICAR SE FIZ CERTO/////////
 ____________________________________
 Imobiliaria:
-Analisar adicao de possiveis atributos de 
+Analisar adicao de possiveis atributos de 			///FEITO, CONSTRUTORES E GETERS E SETERS ADICIONADOS///
 controle e adicionar os metodos necessarios
- + construtores + getters and setters
 _____________________________________
 Fazer interface Grafica:
