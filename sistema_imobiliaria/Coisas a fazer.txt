@@ -1,0 +1,23 @@
+COISAS A FAZER:
+
+____________________________________
+Aluguel:
+Adicionar funções:
+    - float calcularValorTotal;
+    - boolean possuiSeguro;
+    - boolean verificarAtraso;
+    - String toString;
+____________________________________
+Configuracao:
+config necessarias e metodos
+
+____________________________________
+Venda:
+StringToString  						////FEITO, VERIFICAR SE FIZ CERTO/////////
+____________________________________
+Imobiliaria:
+Analisar adicao de possiveis atributos de 
+controle e adicionar os metodos necessarios
+ + construtores + getters and setters
+_____________________________________
+Fazer interface Grafica:

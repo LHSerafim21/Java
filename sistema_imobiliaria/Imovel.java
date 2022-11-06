@@ -21,9 +21,6 @@ public abstract class Imovel {
                 this.valorVenda = valorVenda;
                 this.valorAluguel = valorAluguel;
     }
-
-    public Imovel() {
-    }
     
     public int getCodigoImovel() {
         return codigoImovel;

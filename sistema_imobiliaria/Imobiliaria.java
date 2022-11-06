@@ -12,6 +12,11 @@ public class Imobiliaria {
     private ArrayList<Seguro> seguros;
     private Configuracao configuracoes;
 
+    Imobiliaria(String nome, String endereco){
+        this.nome = nome;
+        this.endereco = endereco;
+    }
+
     //TODO - Analisar adicao de possiveis atributos de controle e adicionar os metodos necessarios + construtores + getters and setters
 
 }

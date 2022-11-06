@@ -11,8 +11,7 @@ public class Venda {
     private float valorTotalVenda;
     private Pagamento formaPagamento;
 
-    public Venda(int codigoVenda, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataVenda,
-            float valorTotalVenda, Pagamento formaPagamento) {
+    public Venda(int codigoVenda, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataVenda, float valorTotalVenda, Pagamento formaPagamento) {
         this.codigoVenda = codigoVenda;
         this.cliente = cliente;
         this.corretor = corretor;
@@ -20,8 +19,6 @@ public class Venda {
         this.dataVenda = dataVenda;
         this.valorTotalVenda = valorTotalVenda;
         this.formaPagamento = formaPagamento;
-    }
-    public Venda() {
     }
 
     public int getCodigoVenda() {
@@ -67,5 +64,9 @@ public class Venda {
         this.formaPagamento = formaPagamento;
     }
 
-    /*TODO - Implementar função String toString */
+    @Override
+    public String toString(){
+        return "Codigo da Venda: "+codigoVenda+"Cliente: "+cliente+"Corretor: "+corretor+"Imovel: "+imovel+
+        "Data da Venda: "+dataVenda+"Valor total da venda: "+valorTotalVenda+"Forma de Pagamento: "+formaPagamento;
+    }
 }
