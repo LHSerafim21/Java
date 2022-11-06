@@ -1,3 +1,5 @@
+package sistema_imobiliaria;
+
 import java.time.LocalDate;
 
 public class Venda {

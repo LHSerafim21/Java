@@ -1,3 +1,5 @@
+package sistema_imobiliaria;
+
 public class Dinheiro extends Pagamento {
 
     public Dinheiro() {

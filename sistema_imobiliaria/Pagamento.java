@@ -1,3 +1,5 @@
+package sistema_imobiliaria;
+
 public abstract class Pagamento {
     protected String tipoPagamento;
 

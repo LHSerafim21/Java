@@ -1,16 +1,14 @@
+package sistema_imobiliaria;
+
 import java.time.LocalDate;
 
 public class ApartamentoResidencial extends Imovel{
-    protected int andar;
-    protected float valorCondominio;
-    
-    public ApartamentoResidencial() {
-    }
-    public ApartamentoResidencial(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdsVagasGaragem,
-            float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida,
-            String endereco, LocalDate dataConstrucao, int andar, float valorCondominio) {
-        super(codigoImovel, qtdDormitorios, qtdBanheiros, qtdsVagasGaragem, areaTotal, valorIPTU, valorVenda,
-                valorAluguel, areaConstruida, endereco, dataConstrucao);
+   
+    private int andar;
+    private float valorCondominio;
+ 
+    public ApartamentoResidencial(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida, String endereco, LocalDate dataConstrucao, int andar, float valorCondominio) {
+        super(codigoImovel, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, areaTotal, valorIPTU, valorVenda, valorAluguel, areaConstruida, endereco, dataConstrucao);
         this.andar = andar;
         this.valorCondominio = valorCondominio;
     }

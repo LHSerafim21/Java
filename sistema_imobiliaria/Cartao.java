@@ -1,3 +1,5 @@
+package sistema_imobiliaria;
+
 public class Cartao extends Pagamento {
     private String nome, bandeira, numero;
 

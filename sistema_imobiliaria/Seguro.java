@@ -1,3 +1,5 @@
+package sistema_imobiliaria;
+
 public class Seguro {
     private int codigoSeguro;
     private String nomeSeguradora, tipo, descricao;
