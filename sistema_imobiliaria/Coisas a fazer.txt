@@ -3,13 +3,14 @@ COISAS A FAZER:
 ____________________________________
 Aluguel:
 Adicionar funções:
-    - float calcularValorTotal;
-    - boolean possuiSeguro;
-    - boolean verificarAtraso;
-    - String toString;
+    - float calcularValorTotal;					///CRIADA, POREM N SEI QUAL O CALCULO QUE PRECISA SER FEITO, PROCUREI NAS ESPECIFICAÇÕES DO TRABALHO E N 
+								ENCONTREI. ENTÃO SO DEIXEI PRA RETORNAR A VARIAVEL
+    - boolean possuiSeguro;					////CRIADA, VERIFICAR SE ESTA TUDO CERTO.
+    - boolean verificarAtraso;					
+    - String toString;						///CRIADA, VERIFICAR SE ESTA TUDO CERTO.
 ____________________________________
 Configuracao:
-config necessarias e metodos
+config necessarias e metodos					///FEITO, VERIFICAR SE FIZ CERTO/////
 
 ____________________________________
 Venda:
@@ -17,6 +18,6 @@ StringToString  						////FEITO, VERIFICAR SE FIZ CERTO/////////
 ____________________________________
 Imobiliaria:
 Analisar adicao de possiveis atributos de 			///FEITO, CONSTRUTORES E GETERS E SETERS ADICIONADOS///
-controle e adicionar os metodos necessarios
+controle 
 _____________________________________
 Fazer interface Grafica:

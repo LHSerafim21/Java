@@ -16,9 +16,7 @@ public class Aluguel {
     
     public Aluguel() {
     }
-    public Aluguel(int codigoAluguel, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataAluguel,
-            LocalDate dataDevolucao, LocalDate dataPagamentoMensal, float valorTotalAluguel, Pagamento formaPagamento,
-            ArrayList<Seguro> segurosContratados, boolean pago) {
+    public Aluguel(int codigoAluguel, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataAluguel, LocalDate dataDevolucao, LocalDate dataPagamentoMensal, float valorTotalAluguel, Pagamento formaPagamento, ArrayList<Seguro> segurosContratados, boolean pago) {
         this.codigoAluguel = codigoAluguel;
         this.cliente = cliente;
         this.corretor = corretor;
@@ -99,11 +97,30 @@ public class Aluguel {
         this.pago = pago;
     }
 
-    /*TODO Adicionar funções:
-    - float calcularValorTotal;
-    - boolean possuiSeguro;
-    - boolean verificarAtraso;
-    - String toString;*/
+    ///////////////////////////////////////////////////////////////////////////////////////////
+
+    public float calcularValorTotal(float valorTotalAluguel) {      
+        return valorTotalAluguel;
+    }
+    
+    public boolean possuiSeguro(int codigoSeguro){
+        for(Seguro seguro : this.segurosContratados){
+            if(seguro.getCodigoSeguro() == codigoSeguro){
+                System.out.println("Possui Seguro");
+                return true;
+            }
+        }
+        System.out.println("Não possui Seguro");
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Codigo do Aluguel: "+codigoAluguel+"Cliente: "+cliente+"Corretor: "+corretor+"Imovel: "+imovel+"Data do Aluguel: "+dataAluguel+
+        "Data da Devolucao: "+dataDevolucao+"Data do pagamento (MENSAL): "+dataPagamentoMensal+"Valor total do aluguel: "+valorTotalAluguel+ "Forma de Pagamento: "+formaPagamento+
+        "Possui Seguro: "+segurosContratados+"Pago: "+pago;
+    }
+   
     
     
 }

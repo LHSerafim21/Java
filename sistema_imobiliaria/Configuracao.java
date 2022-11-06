@@ -61,6 +61,4 @@ public class Configuracao {
         this.arquivoSeguros = arquivoSeguros;
     }
 
-    
-    //TODO - Adicionar demais config necessarias e metodos + contrutores + getters and setters
 }

@@ -95,6 +95,7 @@ public class Imobiliaria {
     public void setConfiguracoes(Configuracao configuracoes){
         this.configuracoes = configuracoes;
     }
-    //Analisar adicao de possiveis atributos de controle e adicionar os metodos necessarios 
+
+    //Analisar adicao de possiveis atributos de controle 
 
 }
