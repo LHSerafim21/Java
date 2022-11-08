@@ -66,7 +66,12 @@ public class Venda {
 
     @Override
     public String toString(){
-        return "Codigo da Venda: "+codigoVenda+"Cliente: "+cliente+"Corretor: "+corretor+"Imovel: "+imovel+
-        "Data da Venda: "+dataVenda+"Valor total da venda: "+valorTotalVenda+"Forma de Pagamento: "+formaPagamento;
+        return "Codigo da Venda: "+codigoVenda+
+                "\nCliente: "+cliente.getNome()+
+                "\nCorretor: "+corretor.getNome()+
+                "\nImovel: "+imovel.getCodigoImovel()+
+                "\nData da Venda: "+dataVenda+
+                "\nValor total da venda: "+valorTotalVenda+
+                "\nForma de Pagamento: "+formaPagamento;
     }
 }

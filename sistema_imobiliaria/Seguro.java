@@ -46,6 +46,7 @@ public class Seguro {
         this.valor = valor;
     }
 
+    @Override
     public String toString(){
         return "Codigo Seguro: "+codigoSeguro+" | Seguradora: "+nomeSeguradora
                 +"\nTipo: "+tipo+" | Descricao: "+descricao+"\nValor: R$ "+valor;

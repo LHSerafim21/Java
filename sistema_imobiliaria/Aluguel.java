@@ -106,19 +106,29 @@ public class Aluguel {
     public boolean possuiSeguro(int codigoSeguro){
         for(Seguro seguro : this.segurosContratados){
             if(seguro.getCodigoSeguro() == codigoSeguro){
-                System.out.println("Possui Seguro");
                 return true;
             }
         }
-        System.out.println("Não possui Seguro");
         return false;
     }
 
+    /*public boolean verificarAtraso(){
+
+    } */
+
     @Override
     public String toString() {
-        return "Codigo do Aluguel: "+codigoAluguel+"Cliente: "+cliente+"Corretor: "+corretor+"Imovel: "+imovel+"Data do Aluguel: "+dataAluguel+
-        "Data da Devolucao: "+dataDevolucao+"Data do pagamento (MENSAL): "+dataPagamentoMensal+"Valor total do aluguel: "+valorTotalAluguel+ "Forma de Pagamento: "+formaPagamento+
-        "Possui Seguro: "+segurosContratados+"Pago: "+pago;
+        return "Codigo do Aluguel: "+codigoAluguel+
+                "\nCliente: "+cliente+
+                "\nCorretor: "+corretor+
+                "\nImovel: "+imovel+
+                "\nData do Aluguel: "+dataAluguel+
+                "\nData da Devolucao: "+dataDevolucao+
+                "\nData do pagamento (MENSAL): "+dataPagamentoMensal+
+                "\nValor total do aluguel: "+valorTotalAluguel+
+                "\nForma de Pagamento: "+formaPagamento+
+                "\nPossui Seguro: "+segurosContratados+
+                "\nPago: "+pago;
     }
    
     

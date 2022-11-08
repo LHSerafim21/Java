@@ -77,6 +77,7 @@ public abstract class Usuario{
         this.dataNascimento = LocalDate.parse(dataNascimento);
     }
 
+    @Override
     public String toString(){
         return codigoUsuario+" | "+nome+"\nRG: "+rg+" | CPF: "+cpf+" | Data Nasc.: "+dataNascimento
                 +"\nTel: "+telefone+" | Email: "+email+"\nEndereco: "+endereco+" | CEP: "+cep;
