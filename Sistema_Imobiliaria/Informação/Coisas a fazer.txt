@@ -21,21 +21,3 @@ Analisar adicao de possiveis atributos de 			///FEITO, CONSTRUTORES E GETERS E S
 controle 
 _____________________________________
 Fazer interface Grafica:
-
-_________________________________________________________________________________________
-
-Arquivo "Venda": CERTO
-Arquivo "Usuario": CERTO
-Arquivo "Seguro": CERTO
-Arquivo "Pagamento": CERTO
-Arquivo "Imovel": CERTO
-Arquivo "Imobiliaria": ######               --Controlador, coisas a serem implementadas posteriormente
-Arquivo "Dinheiro": CERTO
-Arquivo "Corretor": CERTO
-Arquivo "Configuracao": CERTO
-Arquivo "Comercial": CERTO
-Arquivo "Cliente": CERTO
-Arquivo "CasaResidencial": CERTO
-Arquivo "Cartao": CERTO
-Arquivo "ApartamentoResidencial": CERTO
-Arquivo "Aluguel": ######                   --Funções para serem desenvolvidas e o toString a ser arrumado

@@ -1,0 +1,37 @@
+COISAS A FAZER:
+
+_________________________________________________________________________________________
+Aluguel:
+Adicionar funções:
+    - float calcularValorTotal;					CERTO
+    - boolean possuiSeguro;					    CERTO
+    - boolean verificarAtraso;                  CERTO					
+    - String toString;						    CERTO
+_________________________________________________________________________________________
+Imobiliaria:
+Analisar adicao de possiveis atributos de 			CERTO
+controle 
+_________________________________________________________________________________________
+Fazer interface Grafica:
+
+-Criar o projeto no NetBeans e Adicionar os arquivos no projeto
+-Montar a estrutura da interface
+-Conectar as classes com a interface
+
+_________________________________________________________________________________________
+
+Arquivo "Venda": CERTO
+Arquivo "Usuario": CERTO
+Arquivo "Seguro": CERTO
+Arquivo "Pagamento": CERTO
+Arquivo "Imovel": CERTO
+Arquivo "Imobiliaria": PARCIALMENTE             --Controlador, coisas a serem implementadas posteriormente
+Arquivo "Dinheiro": CERTO
+Arquivo "Corretor": CERTO
+Arquivo "Configuracao": CERTO
+Arquivo "Comercial": CERTO
+Arquivo "Cliente": CERTO
+Arquivo "CasaResidencial": CERTO
+Arquivo "Cartao": CERTO
+Arquivo "ApartamentoResidencial": CERTO
+Arquivo "Aluguel": CERTO

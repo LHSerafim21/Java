@@ -9,8 +9,6 @@ public class Cartao extends Pagamento {
         this.bandeira = bandeira;
         this.numero = numero;
     }
-    public Cartao() {
-    }
 
     public String getNome() {
         return nome;

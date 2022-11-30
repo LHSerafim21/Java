@@ -15,8 +15,6 @@ public class Corretor extends Usuario {
         this.salario = salario;
         this.dataAdmissao = dataAdmissao;
     }
-    public Corretor() {
-    }
 
     public String getCreci() {
         return creci;

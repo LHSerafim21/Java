@@ -7,8 +7,6 @@ public abstract class Usuario{
     protected int codigoUsuario;
     protected LocalDate dataNascimento;
     
-    public Usuario() {
-    }
     public Usuario(String nome, String cpf, String rg, String endereco, String cep, String telefone, String email,
             int codigoUsuario, String dataNascimento) {
         this.nome = nome;

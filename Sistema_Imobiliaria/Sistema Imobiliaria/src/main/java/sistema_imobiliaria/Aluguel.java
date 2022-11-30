@@ -1,6 +1,7 @@
 package sistema_imobiliaria;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 public class Aluguel {
@@ -13,10 +14,9 @@ public class Aluguel {
     private Pagamento formaPagamento;
     private ArrayList<Seguro> segurosContratados;
     private boolean pago;
+    private boolean disponivel=true;
     
-    public Aluguel() {
-    }
-    public Aluguel(int codigoAluguel, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataAluguel, LocalDate dataDevolucao, LocalDate dataPagamentoMensal, float valorTotalAluguel, Pagamento formaPagamento, ArrayList<Seguro> segurosContratados, boolean pago) {
+    public Aluguel(int codigoAluguel, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataAluguel, LocalDate dataDevolucao, LocalDate dataPagamentoMensal, float valorTotalAluguel, Pagamento formaPagamento, ArrayList<Seguro> segurosContratados, boolean pago, boolean disponivel) {
         this.codigoAluguel = codigoAluguel;
         this.cliente = cliente;
         this.corretor = corretor;
@@ -28,6 +28,7 @@ public class Aluguel {
         this.formaPagamento = formaPagamento;
         this.segurosContratados = segurosContratados;
         this.pago = pago;
+        this.disponivel = disponivel;
     }
 
     public int getCodigoAluguel() {
@@ -96,11 +97,17 @@ public class Aluguel {
     public void setPago(boolean pago) {
         this.pago = pago;
     }
-
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
     ///////////////////////////////////////////////////////////////////////////////////////////
 
-    public float calcularValorTotal(float valorTotalAluguel) {      
-        return valorTotalAluguel;
+    public float calcularValorTotal(float ValorAluguel) {    
+        long meses = dataAluguel.until(dataDevolucao, ChronoUnit.MONTHS);
+        return valorTotalAluguel = imovel.getValorAluguel() * meses;
     }
     
     public boolean possuiSeguro(int codigoSeguro){
@@ -112,23 +119,37 @@ public class Aluguel {
         return false;
     }
 
-    /*public boolean verificarAtraso(){
+    public boolean verificarAtraso(){
+   
+        LocalDate hoje = LocalDate.now();
 
-    } */
+        if(getDataPagamentoMensal().isAfter(hoje) == true){
+            return true;                                             //se estiver atrasado
+        }
+        return false;                                                //nao esta atrasado
+    }
+
+    public boolean verificarDisponivel(){
+        if(disponivel == true){
+            return true;
+        }
+        else return false;
+    }
 
     @Override
     public String toString() {
         return "Codigo do Aluguel: "+codigoAluguel+
-                "\nCliente: "+cliente+
-                "\nCorretor: "+corretor+
-                "\nImovel: "+imovel+
+                "\nCliente: "+cliente.getNome()+
+                "\nCorretor: "+corretor.getNome()+
+                "\nImovel: "+imovel.getCodigoImovel()+
                 "\nData do Aluguel: "+dataAluguel+
                 "\nData da Devolucao: "+dataDevolucao+
                 "\nData do pagamento (MENSAL): "+dataPagamentoMensal+
                 "\nValor total do aluguel: "+valorTotalAluguel+
-                "\nForma de Pagamento: "+formaPagamento+
+                "\nForma de Pagamento: "+formaPagamento.getTipoPagamento()+
                 "\nPossui Seguro: "+segurosContratados+
-                "\nPago: "+pago;
+                "\nPago: "+pago+
+                "\nDisponivel: "+verificarDisponivel();
     }
    
     

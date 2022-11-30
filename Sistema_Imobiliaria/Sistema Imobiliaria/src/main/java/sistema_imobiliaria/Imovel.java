@@ -7,8 +7,9 @@ public abstract class Imovel {
     protected float areaTotal, valorIPTU, valorVenda, valorAluguel, areaConstruida;
     protected String endereco;
     protected LocalDate dataConstrucao;
+    protected boolean alugado = false;
     
-    public Imovel(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida, String endereco, LocalDate dataConstrucao) {
+    public Imovel(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida, String endereco, LocalDate dataConstrucao, boolean alugado) {
                 this.codigoImovel = codigoImovel;
                 this.endereco = endereco;
                 this.dataConstrucao = dataConstrucao;;
@@ -20,6 +21,7 @@ public abstract class Imovel {
                 this.valorIPTU = valorIPTU;
                 this.valorVenda = valorVenda;
                 this.valorAluguel = valorAluguel;
+                this.alugado = alugado;
     }
     
     public int getCodigoImovel() {
@@ -88,13 +90,34 @@ public abstract class Imovel {
     public void setDataConstrucao(LocalDate dataConstrucao) {
         this.dataConstrucao = dataConstrucao;
     }
+    public boolean isAlugado() {
+        return alugado;
+    }
+    public void setAlugado(boolean alugado) {
+        this.alugado = alugado;
+    }
+
+    public String verificarAlugado(){
+        if(alugado == true){
+            return "disponivel";
+        }
+        else return "alugado";
+    }
 
     @Override
     public String toString() {
-        return "Codigo: "+codigoImovel+" | Data da Construcao: "+dataConstrucao+"\nEndereço: "+endereco+ 
-                "\n Area Total: "+areaTotal+" | Area Construida: "+areaConstruida+"\nQuartos: "+qtdDormitorios+
-                " | Banheiros: "+qtdBanheiros+" | Vagas na Garagem: "+qtdVagasGaragem+"\nValor de Venda: R$ "+valorVenda+
-                " | Valor do Aluguel: R$ "+valorAluguel+" | Valor do IPTU: R$ "+valorIPTU;
+        return  "\n | Codigo: "+codigoImovel+
+                "\n | Data da Construcao: "+dataConstrucao+
+                "\n | Endereço: "+endereco+ 
+                "\n | Area Total: "+areaTotal+
+                "\n | Area Construida: "+areaConstruida+
+                "\n | Quartos: "+qtdDormitorios+
+                "\n | Banheiros: "+qtdBanheiros+
+                "\n | Vagas na Garagem: "+qtdVagasGaragem+
+                "\n | Valor de Venda: R$ "+valorVenda+
+                "\n | Valor do Aluguel: R$ "+valorAluguel+
+                "\n | Valor do IPTU: R$ "+valorIPTU+
+                "\n | Alugado: "+verificarAlugado();
     }
 
     

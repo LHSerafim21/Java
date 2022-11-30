@@ -10,8 +10,9 @@ public class Venda {
     private LocalDate dataVenda;
     private float valorTotalVenda;
     private Pagamento formaPagamento;
+    private boolean disponivel=true;
 
-    public Venda(int codigoVenda, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataVenda, float valorTotalVenda, Pagamento formaPagamento) {
+    public Venda(int codigoVenda, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataVenda, float valorTotalVenda, Pagamento formaPagamento, boolean disponivel) {
         this.codigoVenda = codigoVenda;
         this.cliente = cliente;
         this.corretor = corretor;
@@ -19,6 +20,7 @@ public class Venda {
         this.dataVenda = dataVenda;
         this.valorTotalVenda = valorTotalVenda;
         this.formaPagamento = formaPagamento;
+        this.disponivel = disponivel;
     }
 
     public int getCodigoVenda() {
@@ -63,6 +65,19 @@ public class Venda {
     public void setFormaPagamento(Pagamento formaPagamento) {
         this.formaPagamento = formaPagamento;
     }
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+
+    public boolean verificarDisponivel(){
+        if(disponivel == true){
+            return true;
+        }
+        else return false;
+    }
 
     @Override
     public String toString(){
@@ -72,6 +87,7 @@ public class Venda {
                 "\nImovel: "+imovel.getCodigoImovel()+
                 "\nData da Venda: "+dataVenda+
                 "\nValor total da venda: "+valorTotalVenda+
-                "\nForma de Pagamento: "+formaPagamento;
+                "\nForma de Pagamento: "+formaPagamento.getTipoPagamento()+
+                "\nDisponivel: "+verificarDisponivel();
     }
 }

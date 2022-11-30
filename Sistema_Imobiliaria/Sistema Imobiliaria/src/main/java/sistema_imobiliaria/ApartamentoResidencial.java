@@ -7,8 +7,8 @@ public class ApartamentoResidencial extends Imovel{
     private int andar;
     private float valorCondominio;
  
-    public ApartamentoResidencial(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida, String endereco, LocalDate dataConstrucao, int andar, float valorCondominio) {
-        super(codigoImovel, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, areaTotal, valorIPTU, valorVenda, valorAluguel, areaConstruida, endereco, dataConstrucao);
+    public ApartamentoResidencial(int codigoImovel, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float areaTotal, float valorIPTU, float valorVenda, float valorAluguel, float areaConstruida, String endereco, LocalDate dataConstrucao, int andar, float valorCondominio, boolean alugado) {
+        super(codigoImovel, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, areaTotal, valorIPTU, valorVenda, valorAluguel, areaConstruida, endereco, dataConstrucao, alugado);
         this.andar = andar;
         this.valorCondominio = valorCondominio;
     }

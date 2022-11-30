@@ -10,8 +10,6 @@ public class Cliente extends Usuario {
         super(nome, cpf, rg, endereco, cep, telefone, email, codigoUsuario, dataNascimento);
         this.dataCadastro = dataCadastro;
     }
-    public Cliente() {
-    }
 
     public LocalDate getDataCadastro() {
         return dataCadastro;

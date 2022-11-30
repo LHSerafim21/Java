@@ -3,8 +3,6 @@ package sistema_imobiliaria;
 public abstract class Pagamento {
     protected String tipoPagamento;
 
-    public Pagamento() {
-    }
     public Pagamento(String tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
     }

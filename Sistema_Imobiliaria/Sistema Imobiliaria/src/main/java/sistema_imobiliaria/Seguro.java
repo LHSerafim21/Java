@@ -5,8 +5,6 @@ public class Seguro {
     private String nomeSeguradora, tipo, descricao;
     private float valor;
     
-    public Seguro() {
-    }
     public Seguro(int codigoSeguro, String nomeSeguradora, String tipo, String descricao, float valor) {
         this.codigoSeguro = codigoSeguro;
         this.nomeSeguradora = nomeSeguradora;
