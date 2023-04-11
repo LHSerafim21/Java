@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 public class Notebook extends Item{
 
@@ -36,4 +36,13 @@ public class Notebook extends Item{
     public void setProcessador(String processador){
         this.processador = processador;
     }
+    
+    public String ToString(){
+        return "Codigo Item: " +getCodigoItem()+
+               "Esta Emprestado: " +isEstaEmprestado()+
+               "Modelo: " +modelo+
+               "Marca: " +marca+
+               "Processador: " +processador;
+    }
 }
+

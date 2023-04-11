@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 public class Professor extends Usuario{
 
@@ -23,3 +23,4 @@ public class Professor extends Usuario{
         return "Professor encontrado";
     }
 }
+

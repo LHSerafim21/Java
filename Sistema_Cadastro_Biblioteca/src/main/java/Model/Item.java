@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 public class Item{
 
@@ -25,4 +25,11 @@ public class Item{
     public void setEstaEmprestado(boolean estaEmprestado){
         this.estaEmprestado = estaEmprestado;
     }
+    
+    @Override
+    public String toString(){
+        return "Codigo do Item: " + CodigoItem +
+                "Esta Emprestado: " + estaEmprestado;
+    }
 }
+

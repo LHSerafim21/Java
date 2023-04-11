@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 import java.util.Date;
 import java.util.ArrayList;
@@ -63,15 +63,15 @@ public class Emprestimo{
 
     public void CalcularDataDevolucao(int CodigoUsuario){
         if(CodigoUsuario == 01){
-
+            //return dataDevolucao = dataDevolucao.
         }
         
         if(CodigoUsuario == 02){
-
+            //return dataDevolucao = dataDevolucao.
         }
     
         if(CodigoUsuario == 03){
-
+            //return dataDevolucao = dataDevolucao.
         }
     
     }

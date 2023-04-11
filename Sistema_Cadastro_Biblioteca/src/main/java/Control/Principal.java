@@ -1,13 +1,29 @@
-package sistema_biblioteca;
+package Control;
 
+import javax.swing.JFrame;
+import Model.Emprestimo;
+import Model.Item;
+import Model.Livro;
+import Model.Notebook;
+import Model.Usuario;
+import View.Tela_Inicial;
 import java.util.Date;
 import java.util.ArrayList;
 
     public class Principal{
 
         public static void main(String[] args){
+            
+            Tela_Inicial tela = new Tela_Inicial();
 
-            Usuario u1 = new Professor(01, "Thomas", "125.156.298-42", "thomassera25@gmail.com", "Doutorado");
+            tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            tela.setSize(700,450);
+            tela.setVisible(true);
+            tela.setLocationRelativeTo(null);
+    }
+}
+            
+            /*Usuario u1 = new Professor(01, "Thomas", "125.156.298-42", "thomassera25@gmail.com", "Doutorado");
             Usuario u2 = new Professor(01, "Dante", "256.478.463-78", "dantehjdi6458@gmail.com", "Mestrado");
             Usuario u3 = new Aluno(02, "Nicolas", "587.968.128-45", "Nicoasafde56@gmail.com", "Computacao", 2020);
             Usuario u4 = new Aluno(02, "Klaus", "748.881.687-57", "Klausoisdya588@gmail.com", "Geografia", 2022);
@@ -27,6 +43,6 @@ import java.util.ArrayList;
             ArrayList<Usuario> usuario = new ArrayList();
             ArrayList<Emprestimo> emprestimo = new ArrayList();
 
-            emprestimo.usuario
         }
-    }
+    }*/
+

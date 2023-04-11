@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 import java.util.ArrayList;
 
@@ -7,13 +7,13 @@ public class Biblioteca{
     private String nome;
     private ArrayList<Item> item;
     private ArrayList<Usuario> usuario;
-    private ArrayList<Emprestimo> Emprestimo;
+    private ArrayList<Emprestimo> emprestimo;
 
     Biblioteca(String nome, ArrayList<Item> item, ArrayList<Usuario> usuario, ArrayList<Emprestimo> Emprestimo){
         this.nome = nome;
         this.item = item;
         this.usuario = usuario;
-        this.Emprestimo = Emprestimo;
+        this.emprestimo = Emprestimo;
     }
 
     public String getNome(){
@@ -41,22 +41,22 @@ public class Biblioteca{
     }
 
     public ArrayList<Emprestimo> getEmprestimo(){
-        return Emprestimo;
+        return emprestimo;
     }
 
     public void setEmprestimo(ArrayList<Emprestimo> Emprestimo){
-        this.Emprestimo = Emprestimo;
+        this.emprestimo = emprestimo;
     }
 
     //////////////////////////////////////////////////////////////////////////////
 
     public void addEmprestimo(Emprestimo emprestimo){
-        this.Emprestimo.add(emprestimo);
+        this.emprestimo.add(emprestimo);
         System.out.println("Emprestimo Feito!!");
     }
 
     public void imprimirTodosEmprestimos(Emprestimo emprestimo){
-        System.out.println("\nInformações" + this.Emprestimo);
+        System.out.println("\nInformações" + this.emprestimo);
     }
 
     public void imprimirEmprestimosUsuarios(){

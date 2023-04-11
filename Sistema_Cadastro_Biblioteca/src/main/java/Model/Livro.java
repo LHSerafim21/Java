@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 public class Livro extends Item{
 
@@ -25,5 +25,10 @@ public class Livro extends Item{
 
     public void setEditora(String editora){
         this.editora = editora;
+    }
+    
+    public String ToString(){
+        return " Nome: " + nome +
+                " Editora: " +editora;
     }
 }

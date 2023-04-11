@@ -1,4 +1,4 @@
-package sistema_biblioteca;
+package Model;
 
 public class Usuario {
 

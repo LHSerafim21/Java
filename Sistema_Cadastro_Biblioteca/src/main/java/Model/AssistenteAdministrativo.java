@@ -1,9 +1,8 @@
-package sistema_biblioteca;
+package Model;
 
 import java.util.Date;
 
 public class AssistenteAdministrativo extends Usuario{
-
     private Date inicioContrato;
     private Date finalContrato;
 
@@ -33,3 +32,4 @@ public class AssistenteAdministrativo extends Usuario{
         return "Assistente Administrativo encontrado!";
     }
 }
+
