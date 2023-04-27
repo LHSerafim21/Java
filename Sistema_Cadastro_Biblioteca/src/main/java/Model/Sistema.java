@@ -76,4 +76,12 @@ public class Sistema {
         return InfB;
     }
     
+    public static void LimparTextLivros(){
+        Livros.clear();
+    }
+    
+    public static void LimparTextNotebook(){
+        Notebook.clear();
+    }
+    
 }

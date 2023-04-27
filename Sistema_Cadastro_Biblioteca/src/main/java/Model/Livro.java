@@ -28,7 +28,9 @@ public class Livro extends Item{
     }
     
     public String ToString(){
-        return " Nome: " + nome +
-                " Editora: " +editora;
+        return  "\n" + getCodigoItem() +
+                " | Nome: " + nome +
+                " | Editora: " +editora +
+                " | Emprestado: " + isEstaEmprestado();
     }
 }

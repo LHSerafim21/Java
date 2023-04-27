@@ -26,4 +26,12 @@ public class Controlador {
     public static String EscreverNotebooks(){
         return Sistema.InserirTextAreaNotebook();
     }
+    
+    public static void LimparArrayLivros(){
+        Sistema.LimparTextLivros();
+    }
+    
+    public static void LimparArrayNotebook(){
+        Sistema.LimparTextNotebook();
+    }
 }

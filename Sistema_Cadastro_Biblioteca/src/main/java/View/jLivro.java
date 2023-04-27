@@ -30,9 +30,9 @@ public class jLivro extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jPanel1 = new javax.swing.JPanel();
-        jTextFieldInserirNomeLivro = new javax.swing.JTextField();
+        jTextFieldInserirNomeEditora_ = new javax.swing.JTextField();
         jButtonCadastrarLivro = new javax.swing.JButton();
-        jTextFieldInserirNomeEditora = new javax.swing.JTextField();
+        jTextFieldInserirNomeLivro_ = new javax.swing.JTextField();
         jButtonVoltar = new javax.swing.JButton();
         jTextFieldCodigoLivro = new javax.swing.JTextField();
         jCheckBoxLivroEmprestado = new javax.swing.JCheckBox();
@@ -44,10 +44,10 @@ public class jLivro extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        jTextFieldInserirNomeLivro.setText("Nome do Livro");
-        jTextFieldInserirNomeLivro.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldInserirNomeEditora_.setText("Nome da Editora");
+        jTextFieldInserirNomeEditora_.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldInserirNomeLivroActionPerformed(evt);
+                jTextFieldInserirNomeEditora_ActionPerformed(evt);
             }
         });
 
@@ -59,7 +59,7 @@ public class jLivro extends javax.swing.JFrame {
             }
         });
 
-        jTextFieldInserirNomeEditora.setText("Nome da Editora");
+        jTextFieldInserirNomeLivro_.setText("Nome do Livro");
 
         jButtonVoltar.setText("Voltar");
         jButtonVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -90,8 +90,8 @@ public class jLivro extends javax.swing.JFrame {
                         .addComponent(jButtonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextFieldInserirNomeEditora, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
-                            .addComponent(jTextFieldInserirNomeLivro, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jTextFieldInserirNomeLivro_, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
+                            .addComponent(jTextFieldInserirNomeEditora_, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -104,19 +104,19 @@ public class jLivro extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextFieldInserirNomeLivro, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
-                    .addComponent(jTextFieldCodigoLivro))
-                .addGap(18, 18, 18)
+                .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldInserirNomeEditora, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBoxLivroEmprestado, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldCodigoLivro, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldInserirNomeLivro_, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jCheckBoxLivroEmprestado, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(jTextFieldInserirNomeEditora_))
                 .addGap(57, 57, 57)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonCadastrarLivro, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         jMenuBarCadastrarLivro.setBackground(new java.awt.Color(102, 102, 102));
@@ -138,9 +138,9 @@ public class jLivro extends javax.swing.JFrame {
 
     private void jButtonCadastrarLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarLivroActionPerformed
         // TODO add your handling code here:
-        String NomeLivro = jTextFieldInserirNomeLivro.getText();
+        String NomeLivro = jTextFieldInserirNomeEditora_.getText();
         int CodigoItem = Integer.parseInt(jTextFieldCodigoLivro.getText());
-        String NomeEditora = jTextFieldInserirNomeEditora.getText();
+        String NomeEditora = jTextFieldInserirNomeLivro_.getText();
         boolean Emprestado = jCheckBoxLivroEmprestado.isSelected();
         
         Controlador.CadastrarDadosLivros(CodigoItem, Emprestado, NomeEditora, NomeLivro);
@@ -152,9 +152,9 @@ public class jLivro extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButtonCadastrarLivroActionPerformed
 
-    private void jTextFieldInserirNomeLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldInserirNomeLivroActionPerformed
+    private void jTextFieldInserirNomeEditora_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldInserirNomeEditora_ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldInserirNomeLivroActionPerformed
+    }//GEN-LAST:event_jTextFieldInserirNomeEditora_ActionPerformed
 
     private void jButtonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVoltarActionPerformed
         // TODO add your handling code here:
@@ -208,8 +208,8 @@ public class jLivro extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBarCadastrarLivro;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFieldCodigoLivro;
-    private javax.swing.JTextField jTextFieldInserirNomeEditora;
-    private javax.swing.JTextField jTextFieldInserirNomeLivro;
+    private javax.swing.JTextField jTextFieldInserirNomeEditora_;
+    private javax.swing.JTextField jTextFieldInserirNomeLivro_;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }

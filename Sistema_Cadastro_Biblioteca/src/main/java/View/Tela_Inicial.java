@@ -239,6 +239,7 @@ public class Tela_Inicial extends javax.swing.JFrame {
         }
         else{
             Ativo = 0;
+            Controlador.LimparArrayNotebook();
             jTextAreaNotebook.setText("");
         }
     }//GEN-LAST:event_jCheckBoxNotebookTrueActionPerformed
@@ -252,6 +253,7 @@ public class Tela_Inicial extends javax.swing.JFrame {
         }
         else{
             Ativo = 0;
+            Controlador.LimparArrayLivros();
             jTextAreaLivros.setText("");
             
         }

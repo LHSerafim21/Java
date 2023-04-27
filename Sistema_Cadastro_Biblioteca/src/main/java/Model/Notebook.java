@@ -38,11 +38,11 @@ public class Notebook extends Item{
     }
     
     public String ToString(){
-        return "Codigo Item: " +getCodigoItem()+
-               "Esta Emprestado: " +isEstaEmprestado()+
-               "Modelo: " +modelo+
-               "Marca: " +marca+
-               "Processador: " +processador;
+        return "\n" +getCodigoItem()+
+               " | Modelo: " +modelo+
+               " | Marca: " +marca+
+               " | Processador: " +processador+
+               " | Esta Emprestado: " +isEstaEmprestado();
     }
 }
 
