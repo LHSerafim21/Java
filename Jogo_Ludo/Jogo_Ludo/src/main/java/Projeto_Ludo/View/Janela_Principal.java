@@ -33,15 +33,17 @@ public class Janela_Principal extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        jPanelFundo = new javax.swing.JPanel();
+        jButtonConectar = new javax.swing.JButton();
+        jButtonSerHost = new javax.swing.JButton();
+        jButtonRegras = new javax.swing.JButton();
+        jButtonSair = new javax.swing.JButton();
+        jLabelNomeJogo = new javax.swing.JLabel();
+        jPanelFundoTitulo = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuJogarSerHost = new javax.swing.JMenu();
         jMenuItemSerHost = new javax.swing.JMenuItem();
         jMenuItemConectar = new javax.swing.JMenuItem();
-        jMenuRegras = new javax.swing.JMenu();
-        jMenuItemRegras = new javax.swing.JMenuItem();
 
         jMenu1.setText("File");
         jMenuBar2.add(jMenu1);
@@ -51,52 +53,79 @@ public class Janela_Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanelFundo.setBackground(new java.awt.Color(153, 153, 153));
+        jPanelFundo.setForeground(new java.awt.Color(153, 153, 153));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jButtonConectar.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jButtonConectar.setText("Conectar");
+        jButtonConectar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonConectarActionPerformed(evt);
+            }
+        });
+
+        jButtonSerHost.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jButtonSerHost.setText("Ser Host");
+
+        jButtonRegras.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jButtonRegras.setText("Regras");
+        jButtonRegras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRegrasActionPerformed(evt);
+            }
+        });
+
+        jButtonSair.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jButtonSair.setText("Sair");
+
+        jLabelNomeJogo.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeJogo.setFont(new java.awt.Font("Blue Fonte Sans", 0, 80)); // NOI18N
+        jLabelNomeJogo.setForeground(new java.awt.Color(255, 0, 0));
+        jLabelNomeJogo.setText("    LUDO");
+
+        javax.swing.GroupLayout jPanelFundoLayout = new javax.swing.GroupLayout(jPanelFundo);
+        jPanelFundo.setLayout(jPanelFundoLayout);
+        jPanelFundoLayout.setHorizontalGroup(
+            jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFundoLayout.createSequentialGroup()
+                .addGroup(jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelFundoLayout.createSequentialGroup()
+                        .addGap(340, 340, 340)
+                        .addGroup(jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonRegras, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonSerHost, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonConectar, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanelFundoLayout.createSequentialGroup()
+                        .addGap(310, 310, 310)
+                        .addComponent(jLabelNomeJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 635, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 145, Short.MAX_VALUE)
+        jPanelFundoLayout.setVerticalGroup(
+            jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFundoLayout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addComponent(jLabelNomeJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(103, 103, 103)
+                .addComponent(jButtonConectar, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonSerHost, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonRegras, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 765, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanelFundoTituloLayout = new javax.swing.GroupLayout(jPanelFundoTitulo);
+        jPanelFundoTitulo.setLayout(jPanelFundoTituloLayout);
+        jPanelFundoTituloLayout.setHorizontalGroup(
+            jPanelFundoTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 191, Short.MAX_VALUE)
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 629, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(157, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        jPanelFundoTituloLayout.setVerticalGroup(
+            jPanelFundoTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
         jMenuJogarSerHost.setText("Jogar");
@@ -114,72 +143,77 @@ public class Janela_Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuJogarSerHost);
 
-        jMenuRegras.setText("Regras");
-
-        jMenuItemRegras.setText("Regras");
-        jMenuItemRegras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemRegrasActionPerformed(evt);
-            }
-        });
-        jMenuRegras.add(jMenuItemRegras);
-
-        jMenuBar1.add(jMenuRegras);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanelFundo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(550, 550, 550)
+                    .addComponent(jPanelFundoTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(550, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelFundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(349, 349, 349)
+                    .addComponent(jPanelFundoTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(349, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItemRegrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRegrasActionPerformed
-        // TODO add your handling code here:
-        JOptionPane.showMessageDialog(rootPane, "Regras:\n\nObjetivo do jogo\n" +
-"Percorrer o trajeto do tabuleiro com todas as peças e ser o primeiro jogador a chegar a casa central.\n" +
-"Regras\n" +
-"Para se iniciar a partida, joga-se o dado e o participante que fizer o maior número de pontos inicia o\n" +
-"jogo, continuando as jogadas em sentido horário.\n" +
-"Joga-se com um dado e os avanços são feitos de acordo com os pontos obtidos com o lançamento\n" +
-"dos dados.\n" +
-"Cada jogador lança o dado e se tirar “ 1” ou “6” poderá sair da casa de partida, sendo que, ao tirar\n" +
-"“6” você tem o direito de jogar o dado novamente.\n" +
-"Pode ser jogado por 2, 3 ou 4 jogadores (no caso de 4, é possível formar 2 duplas). O tabuleiro\n" +
-"quadrado tem um percurso em forma de cruz e cada jogador tem quatro peões. Um dado define os\n" +
-"movimentos.\n" +
-"Os peões de cada jogador começam na base de mesma cor. O objetivo do jogo é ser o primeiro a\n" +
-"levar seus 4 peões a dar uma volta no tabuleiro e a chegar no ponto final marcado com sua cor. Os\n" +
-"peões movem-se pelo percurso no sentido horário.\n" +
-"Para transportar um peão de sua base para seu ponto de partida é necessário tirar 6. Quando o\n" +
-"jogador já tem pelo menos um peão no percurso, ele pode mover o peão do número de casas tirado\n" +
-"no dado. Se tirar 6, além de usar esse resultado ele pode jogar novamente o dado.\n" +
-"Se um jogador chegar a uma casa já ocupada por um peão adversário, o peão adversário deve\n" +
-"voltar para sua base. Mas se 2 peões da mesma cor ocuparem uma mesma casa, eles não podem\n" +
-"ser capturados e nenhum adversário pode passar por essa casa, tendo seus peões bloqueados.\n" +
-"Após dar a volta no tabuleiro o peão avança pela reta final, de sua própria cor. A chegada ao ponto\n" +
-"final só pode ser obtida por um número exato nos dados. Se o jogador tirar mais do que o\n" +
-"necessário, ele vai até o fim e volta, tendo que aguardar sua próxima jogada. O vencedor é o\n" +
-"primeiro a levar seus quatro peões ao ponto de chegada da sua cor.\n" +
-"Nos Estados Unidos uma variante mais moderna do ludo tornou-se muito popular. O jogo Sorry (no\n" +
-"Brasil lançado em 1999 pela Estrela como Chispa), onde os dados foram substituídos por um\n" +
-"baralho de cartas, que traz algumas possibilidades novas", "Regras do Ludo", -1);
-    }//GEN-LAST:event_jMenuItemRegrasActionPerformed
-
     private void jMenuItemConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemConectarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItemConectarActionPerformed
+
+    private void jButtonRegrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegrasActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Regras:\n\nObjetivo do jogo\n" +
+            "Percorrer o trajeto do tabuleiro com todas as peças e ser o primeiro jogador a chegar a casa central.\n" +
+            "Regras\n" +
+            "Para se iniciar a partida, joga-se o dado e o participante que fizer o maior número de pontos inicia o\n" +
+            "jogo, continuando as jogadas em sentido horário.\n" +
+            "Joga-se com um dado e os avanços são feitos de acordo com os pontos obtidos com o lançamento\n" +
+            "dos dados.\n" +
+            "Cada jogador lança o dado e se tirar “ 1” ou “6” poderá sair da casa de partida, sendo que, ao tirar\n" +
+            "“6” você tem o direito de jogar o dado novamente.\n" +
+            "Pode ser jogado por 2, 3 ou 4 jogadores (no caso de 4, é possível formar 2 duplas). O tabuleiro\n" +
+            "quadrado tem um percurso em forma de cruz e cada jogador tem quatro peões. Um dado define os\n" +
+            "movimentos.\n" +
+            "Os peões de cada jogador começam na base de mesma cor. O objetivo do jogo é ser o primeiro a\n" +
+            "levar seus 4 peões a dar uma volta no tabuleiro e a chegar no ponto final marcado com sua cor. Os\n" +
+            "peões movem-se pelo percurso no sentido horário.\n" +
+            "Para transportar um peão de sua base para seu ponto de partida é necessário tirar 6. Quando o\n" +
+            "jogador já tem pelo menos um peão no percurso, ele pode mover o peão do número de casas tirado\n" +
+            "no dado. Se tirar 6, além de usar esse resultado ele pode jogar novamente o dado.\n" +
+            "Se um jogador chegar a uma casa já ocupada por um peão adversário, o peão adversário deve\n" +
+            "voltar para sua base. Mas se 2 peões da mesma cor ocuparem uma mesma casa, eles não podem\n" +
+            "ser capturados e nenhum adversário pode passar por essa casa, tendo seus peões bloqueados.\n" +
+            "Após dar a volta no tabuleiro o peão avança pela reta final, de sua própria cor. A chegada ao ponto\n" +
+            "final só pode ser obtida por um número exato nos dados. Se o jogador tirar mais do que o\n" +
+            "necessário, ele vai até o fim e volta, tendo que aguardar sua próxima jogada. O vencedor é o\n" +
+            "primeiro a levar seus quatro peões ao ponto de chegada da sua cor.\n" +
+            "Nos Estados Unidos uma variante mais moderna do ludo tornou-se muito popular. O jogo Sorry (no\n" +
+            "Brasil lançado em 1999 pela Estrela como Chispa), onde os dados foram substituídos por um\n" +
+            "baralho de cartas, que traz algumas possibilidades novas", "Regras do Ludo", -1);
+    }//GEN-LAST:event_jButtonRegrasActionPerformed
+
+    private void jButtonConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConectarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonConectarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,17 +256,19 @@ public class Janela_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonConectar;
+    private javax.swing.JButton jButtonRegras;
+    private javax.swing.JButton jButtonSair;
+    private javax.swing.JButton jButtonSerHost;
+    private javax.swing.JLabel jLabelNomeJogo;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItemConectar;
-    private javax.swing.JMenuItem jMenuItemRegras;
     private javax.swing.JMenuItem jMenuItemSerHost;
     private javax.swing.JMenu jMenuJogarSerHost;
-    private javax.swing.JMenu jMenuRegras;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanelFundo;
+    private javax.swing.JPanel jPanelFundoTitulo;
     // End of variables declaration//GEN-END:variables
 }
