@@ -41,9 +41,6 @@ public class Janela_Principal extends javax.swing.JFrame {
         jLabelNomeJogo = new javax.swing.JLabel();
         jPanelFundoTitulo = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenuJogarSerHost = new javax.swing.JMenu();
-        jMenuItemSerHost = new javax.swing.JMenuItem();
-        jMenuItemConectar = new javax.swing.JMenuItem();
 
         jMenu1.setText("File");
         jMenuBar2.add(jMenu1);
@@ -66,6 +63,11 @@ public class Janela_Principal extends javax.swing.JFrame {
 
         jButtonSerHost.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
         jButtonSerHost.setText("Ser Host");
+        jButtonSerHost.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSerHostActionPerformed(evt);
+            }
+        });
 
         jButtonRegras.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
         jButtonRegras.setText("Regras");
@@ -77,6 +79,11 @@ public class Janela_Principal extends javax.swing.JFrame {
 
         jButtonSair.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
         jButtonSair.setText("Sair");
+        jButtonSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSairActionPerformed(evt);
+            }
+        });
 
         jLabelNomeJogo.setBackground(new java.awt.Color(255, 255, 255));
         jLabelNomeJogo.setFont(new java.awt.Font("Blue Fonte Sans", 0, 80)); // NOI18N
@@ -128,21 +135,6 @@ public class Janela_Principal extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        jMenuJogarSerHost.setText("Jogar");
-
-        jMenuItemSerHost.setText("Ser Host");
-        jMenuJogarSerHost.add(jMenuItemSerHost);
-
-        jMenuItemConectar.setText("Conectar");
-        jMenuItemConectar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemConectarActionPerformed(evt);
-            }
-        });
-        jMenuJogarSerHost.add(jMenuItemConectar);
-
-        jMenuBar1.add(jMenuJogarSerHost);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -169,15 +161,11 @@ public class Janela_Principal extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(349, 349, 349)
                     .addComponent(jPanelFundoTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(349, Short.MAX_VALUE)))
+                    .addContainerGap(370, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItemConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemConectarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItemConectarActionPerformed
 
     private void jButtonRegrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegrasActionPerformed
         // TODO add your handling code here:
@@ -214,6 +202,22 @@ public class Janela_Principal extends javax.swing.JFrame {
     private void jButtonConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConectarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonConectarActionPerformed
+
+    private void jButtonSerHostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSerHostActionPerformed
+        // TODO add your handling code here:
+        jSerHost frame = new jSerHost();
+        
+        
+        frame.setVisible(true);
+        frame.setSize(1000,870);
+        dispose();
+        frame.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButtonSerHostActionPerformed
+
+    private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButtonSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -265,10 +269,8 @@ public class Janela_Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItemConectar;
-    private javax.swing.JMenuItem jMenuItemSerHost;
-    private javax.swing.JMenu jMenuJogarSerHost;
     private javax.swing.JPanel jPanelFundo;
     private javax.swing.JPanel jPanelFundoTitulo;
     // End of variables declaration//GEN-END:variables
+
 }
