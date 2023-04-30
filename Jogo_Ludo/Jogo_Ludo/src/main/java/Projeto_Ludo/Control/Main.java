@@ -9,7 +9,7 @@ public class Main{
             Janela_Principal tela = new Janela_Principal();
 
             tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            tela.setSize(1400,1000);
+            tela.setSize(1000,870);
             tela.setVisible(true);
             tela.setLocationRelativeTo(null);
     }
