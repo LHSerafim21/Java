@@ -254,10 +254,7 @@ public class Janela_Principal extends javax.swing.JFrame {
         });
     }
     
-    public void PegarIP() throws UnknownHostException{
-        String ipDaMaquina = InetAddress.getLocalHost().getHostAddress();
-        System.out.println(ipDaMaquina);       
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonConectar;

@@ -4,6 +4,11 @@
  */
 package Projeto_Ludo.View;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Henrique
@@ -26,21 +31,145 @@ public class jSerHost extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanelFundoSerHost = new javax.swing.JPanel();
+        jLabelTitulo = new javax.swing.JLabel();
+        jPaneCadastrarPlayer = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
+        jButtonIniciar = new javax.swing.JButton();
+        jLabelPlayer1 = new javax.swing.JLabel();
+        jLabelPlayer2 = new javax.swing.JLabel();
+        jLabelInsiraONome = new javax.swing.JLabel();
+        jButtonVoltar = new javax.swing.JButton();
+        jLabel_IP = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanelFundoSerHost.setBackground(new java.awt.Color(153, 153, 153));
+
+        jLabelTitulo.setFont(new java.awt.Font("Blue Fonte Sans", 0, 80)); // NOI18N
+        jLabelTitulo.setForeground(new java.awt.Color(255, 0, 0));
+        jLabelTitulo.setText("LUDO");
+
+        jPaneCadastrarPlayer.setBackground(new java.awt.Color(102, 102, 102));
+        jPaneCadastrarPlayer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jScrollPane1.setViewportView(jTextPane1);
+
+        jPaneCadastrarPlayer.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 95, 258, 50));
+
+        jScrollPane2.setViewportView(jTextPane2);
+
+        jPaneCadastrarPlayer.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 95, 258, 49));
+
+        jButtonIniciar.setFont(new java.awt.Font("Blue Fonte Sans", 0, 36)); // NOI18N
+        jButtonIniciar.setText("INICIAR!!");
+        jButtonIniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIniciarActionPerformed(evt);
+            }
+        });
+        jPaneCadastrarPlayer.add(jButtonIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 279, 266, 56));
+
+        jLabelPlayer1.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jLabelPlayer1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelPlayer1.setText("Player 1");
+        jPaneCadastrarPlayer.add(jLabelPlayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 180, 30));
+
+        jLabelPlayer2.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jLabelPlayer2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelPlayer2.setText("Player 2");
+        jPaneCadastrarPlayer.add(jLabelPlayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, 140, 30));
+
+        jLabelInsiraONome.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jLabelInsiraONome.setText("Insira o Nome:");
+        jPaneCadastrarPlayer.add(jLabelInsiraONome, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 270, 30));
+
+        jButtonVoltar.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jButtonVoltar.setText("Voltar");
+        jButtonVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonVoltarActionPerformed(evt);
+            }
+        });
+
+        jLabel_IP.setFont(new java.awt.Font("Blue Fonte Sans", 0, 48)); // NOI18N
+        jLabel_IP.setText("jLabel1");
+
+        javax.swing.GroupLayout jPanelFundoSerHostLayout = new javax.swing.GroupLayout(jPanelFundoSerHost);
+        jPanelFundoSerHost.setLayout(jPanelFundoSerHostLayout);
+        jPanelFundoSerHostLayout.setHorizontalGroup(
+            jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFundoSerHostLayout.createSequentialGroup()
+                        .addComponent(jButtonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
+                        .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(340, 340, 340))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFundoSerHostLayout.createSequentialGroup()
+                        .addComponent(jPaneCadastrarPlayer, javax.swing.GroupLayout.PREFERRED_SIZE, 864, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(63, 63, 63))))
+            .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
+                .addGap(303, 303, 303)
+                .addComponent(jLabel_IP, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanelFundoSerHostLayout.setVerticalGroup(
+            jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
+                .addGroup(jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(63, 63, 63)
+                        .addComponent(jPaneCadastrarPlayer, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButtonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(57, 57, 57)
+                .addComponent(jLabel_IP, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1003, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelFundoSerHost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 772, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelFundoSerHost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVoltarActionPerformed
+        // TODO add your handling code here:
+        Janela_Principal frame = new Janela_Principal();
+        
+        
+        frame.setVisible(true);
+        frame.setSize(1000,870);
+        dispose();
+        frame.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButtonVoltarActionPerformed
+
+    private void jButtonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciarActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButtonIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,10 +202,38 @@ public class jSerHost extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new jSerHost().setVisible(true);
+                jSerHost l = new jSerHost();
+                
+                try {
+                    String ipDaMaquina = InetAddress.getLocalHost().getHostAddress();
+                    PegarIP();
+                    
+                } catch (UnknownHostException ex) {
+                    Logger.getLogger(jSerHost.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }
+    
+    public void PegarIP(){
+        jLabel_IP.setText("ipDaMaquina");
+    }
+    
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonIniciar;
+    private javax.swing.JButton jButtonVoltar;
+    private javax.swing.JLabel jLabelInsiraONome;
+    private javax.swing.JLabel jLabelPlayer1;
+    private javax.swing.JLabel jLabelPlayer2;
+    private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JLabel jLabel_IP;
+    private javax.swing.JPanel jPaneCadastrarPlayer;
+    private javax.swing.JPanel jPanelFundoSerHost;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane2;
     // End of variables declaration//GEN-END:variables
 }
