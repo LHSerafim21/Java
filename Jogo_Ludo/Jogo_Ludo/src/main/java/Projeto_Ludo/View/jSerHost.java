@@ -8,6 +8,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,15 +36,16 @@ public class jSerHost extends javax.swing.JFrame {
         jLabelTitulo = new javax.swing.JLabel();
         jPaneCadastrarPlayer = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        jTextPanePlayer1 = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        jTextPanePlayer2 = new javax.swing.JTextPane();
         jButtonIniciar = new javax.swing.JButton();
         jLabelPlayer1 = new javax.swing.JLabel();
         jLabelPlayer2 = new javax.swing.JLabel();
         jLabelInsiraONome = new javax.swing.JLabel();
         jButtonVoltar = new javax.swing.JButton();
         jLabel_IP = new javax.swing.JLabel();
+        jButtonPegarIP = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,11 +58,11 @@ public class jSerHost extends javax.swing.JFrame {
         jPaneCadastrarPlayer.setBackground(new java.awt.Color(102, 102, 102));
         jPaneCadastrarPlayer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(jTextPanePlayer1);
 
         jPaneCadastrarPlayer.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 95, 258, 50));
 
-        jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setViewportView(jTextPanePlayer2);
 
         jPaneCadastrarPlayer.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 95, 258, 49));
 
@@ -96,7 +98,15 @@ public class jSerHost extends javax.swing.JFrame {
         });
 
         jLabel_IP.setFont(new java.awt.Font("Blue Fonte Sans", 0, 48)); // NOI18N
-        jLabel_IP.setText("jLabel1");
+        jLabel_IP.setText("Seu Endereco de ip");
+
+        jButtonPegarIP.setFont(new java.awt.Font("Blue Fonte Sans", 0, 36)); // NOI18N
+        jButtonPegarIP.setText("Pegar IP");
+        jButtonPegarIP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPegarIPActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelFundoSerHostLayout = new javax.swing.GroupLayout(jPanelFundoSerHost);
         jPanelFundoSerHost.setLayout(jPanelFundoSerHostLayout);
@@ -113,10 +123,12 @@ public class jSerHost extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFundoSerHostLayout.createSequentialGroup()
                         .addComponent(jPaneCadastrarPlayer, javax.swing.GroupLayout.PREFERRED_SIZE, 864, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(63, 63, 63))))
-            .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
-                .addGap(303, 303, 303)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFundoSerHostLayout.createSequentialGroup()
+                .addGap(141, 141, 141)
+                .addComponent(jButtonPegarIP, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
                 .addComponent(jLabel_IP, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelFundoSerHostLayout.setVerticalGroup(
             jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,9 +142,11 @@ public class jSerHost extends javax.swing.JFrame {
                     .addGroup(jPanelFundoSerHostLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButtonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(57, 57, 57)
-                .addComponent(jLabel_IP, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addGroup(jPanelFundoSerHostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonPegarIP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_IP, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE))
+                .addGap(55, 55, 55))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -161,15 +175,41 @@ public class jSerHost extends javax.swing.JFrame {
         
         
         frame.setVisible(true);
-        frame.setSize(1000,870);
+        frame.setSize(1177,807);
         dispose();
         frame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButtonVoltarActionPerformed
 
     private void jButtonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciarActionPerformed
-        // TODO add your handling code here:
         
+        if(jTextPanePlayer1.getText() != ""){
+        
+        String Player1 = jTextPanePlayer1.getText();
+        String Player2 = jTextPanePlayer2.getText();
+        
+        jJogo game = new jJogo();
+        game.setVisible(true);
+        game.setSize(1177,807);
+        dispose();
+        game.setLocationRelativeTo(null);
+        }
+        
+        else{
+            JOptionPane.showMessageDialog(rootPane, "ERRO, Digite o nome dos Players para começar a jogar...");
+        }
     }//GEN-LAST:event_jButtonIniciarActionPerformed
+
+    private void jButtonPegarIPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPegarIPActionPerformed
+        
+        try {
+            String ipDaMaquina = InetAddress.getLocalHost().getHostAddress();
+            jLabel_IP.setText("Seu IP: " + ipDaMaquina);
+            
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(jSerHost.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }//GEN-LAST:event_jButtonPegarIPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,27 +242,16 @@ public class jSerHost extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new jSerHost().setVisible(true);
-                jSerHost l = new jSerHost();
-                
-                try {
-                    String ipDaMaquina = InetAddress.getLocalHost().getHostAddress();
-                    PegarIP();
-                    
-                } catch (UnknownHostException ex) {
-                    Logger.getLogger(jSerHost.class.getName()).log(Level.SEVERE, null, ex);
-                }
             }
         });
     }
     
-    public void PegarIP(){
-        jLabel_IP.setText("ipDaMaquina");
-    }
     
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonIniciar;
+    private javax.swing.JButton jButtonPegarIP;
     private javax.swing.JButton jButtonVoltar;
     private javax.swing.JLabel jLabelInsiraONome;
     private javax.swing.JLabel jLabelPlayer1;
@@ -233,7 +262,7 @@ public class jSerHost extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelFundoSerHost;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTextPane jTextPanePlayer1;
+    private javax.swing.JTextPane jTextPanePlayer2;
     // End of variables declaration//GEN-END:variables
 }

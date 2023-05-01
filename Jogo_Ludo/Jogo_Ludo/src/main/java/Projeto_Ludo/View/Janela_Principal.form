@@ -91,32 +91,32 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="491" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="340" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabelNomeJogo" min="-2" pref="334" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="454" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButtonSair" min="-2" pref="277" max="-2" attributes="0"/>
-                              <Component id="jButtonRegras" min="-2" pref="277" max="-2" attributes="0"/>
                               <Component id="jButtonSerHost" min="-2" pref="277" max="-2" attributes="0"/>
                               <Component id="jButtonConectar" min="-2" pref="277" max="-2" attributes="0"/>
+                              <Component id="jButtonRegras" alignment="0" min="-2" pref="277" max="-2" attributes="0"/>
+                              <Component id="jButtonSair" alignment="0" min="-2" pref="277" max="-2" attributes="0"/>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
-                          <Component id="jLabelNomeJogo" min="-2" pref="334" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="490" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="0" pref="635" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                   <Component id="jLabelNomeJogo" min="-2" pref="77" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                   <Component id="jButtonConectar" min="-2" pref="47" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButtonSerHost" min="-2" pref="46" max="-2" attributes="0"/>
@@ -124,7 +124,7 @@
                   <Component id="jButtonRegras" min="-2" pref="46" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButtonSair" min="-2" pref="46" max="-2" attributes="0"/>
-                  <EmptySpace pref="271" max="32767" attributes="0"/>
+                  <EmptySpace pref="292" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
