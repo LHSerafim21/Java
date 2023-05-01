@@ -4,6 +4,7 @@
  */
 package Projeto_Ludo.View;
 
+import Projeto_Ludo.Control.Configuração;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
@@ -175,7 +176,7 @@ public class jSerHost extends javax.swing.JFrame {
         
         
         frame.setVisible(true);
-        frame.setSize(1177,807);
+        frame.setSize(1177,890);
         dispose();
         frame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButtonVoltarActionPerformed
@@ -187,9 +188,11 @@ public class jSerHost extends javax.swing.JFrame {
         String Player1 = jTextPanePlayer1.getText();
         String Player2 = jTextPanePlayer2.getText();
         
+        //Configuração.setPlayer1() = Player1;
+        
         jJogo game = new jJogo();
         game.setVisible(true);
-        game.setSize(1177,807);
+        game.setSize(1177,840);
         dispose();
         game.setLocationRelativeTo(null);
         }
