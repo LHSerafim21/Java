@@ -2,13 +2,12 @@ package Projeto_Ludo.View;
 
 import Projeto_Ludo.Control.Configuração;
 import Projeto_Ludo.Model.Jogo;
+import javax.swing.JOptionPane;
 
 public class jJogo extends javax.swing.JFrame {
     
     private int x = 1;
     private int Iniciar;
-    private int Player1;
-    private int Player2;
     private int R;
     private String ValorDado;
     
@@ -2134,7 +2133,7 @@ public class jJogo extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2148,8 +2147,10 @@ public class jJogo extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelTabuleiro, javax.swing.GroupLayout.DEFAULT_SIZE, 804, Short.MAX_VALUE)
             .addComponent(jPanelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanelTabuleiro, javax.swing.GroupLayout.PREFERRED_SIZE, 801, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -2205,9 +2206,20 @@ public class jJogo extends javax.swing.JFrame {
             return "";
         }
         else{
-            jLabelVezPlayer.setText("Sua Vez Player 2!!");
-            jTextAreaJogada.setText("");jTextAreaJogada.setText("Você errou!! sua vez Player 2");
-            jLabelDadoPlayer1.setText("");jLabelDadoPlayer1.setText(ValorDado);
+            if(Iniciar == 1){
+                JOptionPane.showMessageDialog(rootPane, "Parabéns, você tirou 6 no dado e começara jogando...", "Jogador 1 Começa", -1);
+                jLabelDadoPlayer1.setVisible(false);
+                jLabelDadoPlayer2.setVisible(false);
+                jLabelResultadoDado.setText("???");
+                jTextAreaJogada.setText("");jTextAreaJogada.setText("Jogador 1, Lance o dado para o primeiro\n movimento...");
+                
+            }
+            else{
+                jLabelVezPlayer.setText("Sua Vez Player 2!!");
+                jTextAreaJogada.setText("");jTextAreaJogada.setText("Você errou!! sua vez Player 2");
+                jLabelDadoPlayer1.setText("");jLabelDadoPlayer1.setText(ValorDado);
+            }
+            
             return "";
         }
     }
@@ -2219,12 +2231,18 @@ public class jJogo extends javax.swing.JFrame {
             jLabelVezPlayer.setText("Sua Vez Player 2!!");
             jTextAreaJogada.setText("");jTextAreaJogada.setText("Você Acertou!!\n Espere o Player 2 Jogar para ver se começara\n jogando");
             jLabelDadoPlayer1.setText("");jLabelDadoPlayer1.setText(ValorDado);   
+            Iniciar = 1;
         }
         
         if(x%2 == 1){
-            jLabelVezPlayer.setText("Sua Vez Player 1!!");
+            jLabelVezPlayer.setText("Sua Vez Player 2!!");
             jTextAreaJogada.setText("");jTextAreaJogada.setText("Você Acertou e começara jogando!!");
             jLabelDadoPlayer2.setText("");jLabelDadoPlayer2.setText(ValorDado);
+            JOptionPane.showMessageDialog(rootPane, "Parabéns, você tirou 6 no dado e começara jogando...", "Jogador 2 Começa", -1);
+            jLabelDadoPlayer1.setVisible(false);
+            jLabelDadoPlayer2.setVisible(false);
+            jLabelResultadoDado.setText("???");
+            jTextAreaJogada.setText("");jTextAreaJogada.setText("Jogador 2, Lance o dado para o primeiro\n movimento...");
         }
         return "";
     }

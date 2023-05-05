@@ -39,6 +39,7 @@ public class Janela_Principal extends javax.swing.JFrame {
         jButtonRegras = new javax.swing.JButton();
         jButtonSair = new javax.swing.JButton();
         jLabelNomeJogo = new javax.swing.JLabel();
+        jToggleButtonJogar = new javax.swing.JToggleButton();
         jPanelFundoTitulo = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
@@ -90,6 +91,14 @@ public class Janela_Principal extends javax.swing.JFrame {
         jLabelNomeJogo.setForeground(new java.awt.Color(255, 0, 0));
         jLabelNomeJogo.setText("    LUDO");
 
+        jToggleButtonJogar.setFont(new java.awt.Font("Blue Fonte Sans", 0, 24)); // NOI18N
+        jToggleButtonJogar.setText("Jogar");
+        jToggleButtonJogar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonJogarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelFundoLayout = new javax.swing.GroupLayout(jPanelFundo);
         jPanelFundo.setLayout(jPanelFundoLayout);
         jPanelFundoLayout.setHorizontalGroup(
@@ -101,11 +110,13 @@ public class Janela_Principal extends javax.swing.JFrame {
                         .addComponent(jLabelNomeJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(417, 417, 417))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFundoLayout.createSequentialGroup()
-                        .addGroup(jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonSerHost, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonConectar, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonRegras, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jToggleButtonJogar, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanelFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jButtonSerHost, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
+                                .addComponent(jButtonConectar, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
+                                .addComponent(jButtonRegras, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
+                                .addComponent(jButtonSair, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)))
                         .addGap(458, 458, 458))))
         );
         jPanelFundoLayout.setVerticalGroup(
@@ -113,7 +124,9 @@ public class Janela_Principal extends javax.swing.JFrame {
             .addGroup(jPanelFundoLayout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addComponent(jLabelNomeJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(83, 83, 83)
+                .addGap(70, 70, 70)
+                .addComponent(jToggleButtonJogar, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addComponent(jButtonConectar, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonSerHost, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -156,12 +169,12 @@ public class Janela_Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelFundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(349, 349, 349)
                     .addComponent(jPanelFundoTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(370, Short.MAX_VALUE)))
+                    .addContainerGap(380, Short.MAX_VALUE)))
         );
 
         pack();
@@ -218,6 +231,16 @@ public class Janela_Principal extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButtonSairActionPerformed
 
+    private void jToggleButtonJogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonJogarActionPerformed
+        // TODO add your handling code here:
+        jJogo frame = new jJogo();
+        
+        frame.setVisible(true);
+        frame.setSize(1177,890);
+        dispose();
+        frame.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jToggleButtonJogarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -267,6 +290,7 @@ public class Janela_Principal extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanelFundo;
     private javax.swing.JPanel jPanelFundoTitulo;
+    private javax.swing.JToggleButton jToggleButtonJogar;
     // End of variables declaration//GEN-END:variables
 
 }
