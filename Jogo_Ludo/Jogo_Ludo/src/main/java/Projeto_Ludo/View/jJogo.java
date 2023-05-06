@@ -39,9 +39,13 @@ public class jJogo extends javax.swing.JFrame {
         jPanelGrandeVerde = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel84 = new javax.swing.JPanel();
+        jLabelPeao3_Verde = new javax.swing.JLabel();
         jPanel85 = new javax.swing.JPanel();
+        jLabelPeao1_Verde = new javax.swing.JLabel();
         jPanel86 = new javax.swing.JPanel();
+        jLabelPeao4_Verde = new javax.swing.JLabel();
         jPanel87 = new javax.swing.JPanel();
+        jLabelPeao2_Verde = new javax.swing.JLabel();
         Verde1 = new javax.swing.JPanel();
         Verde2 = new javax.swing.JPanel();
         Verde3 = new javax.swing.JPanel();
@@ -52,9 +56,13 @@ public class jJogo extends javax.swing.JFrame {
         jPanelGrandeAzul = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel92 = new javax.swing.JPanel();
+        jLabelPeao1_Azul = new javax.swing.JLabel();
         jPanel93 = new javax.swing.JPanel();
+        jLabelPeao3_Azul = new javax.swing.JLabel();
         jPanel94 = new javax.swing.JPanel();
+        jLabelPeao2_Azul = new javax.swing.JLabel();
         jPanel95 = new javax.swing.JPanel();
+        jLabelPeao4_Azul = new javax.swing.JLabel();
         Azul1 = new javax.swing.JPanel();
         Azul2 = new javax.swing.JPanel();
         Azul3 = new javax.swing.JPanel();
@@ -371,57 +379,77 @@ public class jJogo extends javax.swing.JFrame {
         jPanel84.setBackground(new java.awt.Color(0, 255, 0));
         jPanel84.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao3_Verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Verde.png")); // NOI18N
+        jLabelPeao3_Verde.setText("jLabel4");
+
         javax.swing.GroupLayout jPanel84Layout = new javax.swing.GroupLayout(jPanel84);
         jPanel84.setLayout(jPanel84Layout);
         jPanel84Layout.setHorizontalGroup(
             jPanel84Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel84Layout.createSequentialGroup()
+                .addComponent(jLabelPeao3_Verde, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel84Layout.setVerticalGroup(
             jPanel84Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao3_Verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel85.setBackground(new java.awt.Color(51, 255, 0));
         jPanel85.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao1_Verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Verde.png")); // NOI18N
+        jLabelPeao1_Verde.setText("jLabel4");
+
         javax.swing.GroupLayout jPanel85Layout = new javax.swing.GroupLayout(jPanel85);
         jPanel85.setLayout(jPanel85Layout);
         jPanel85Layout.setHorizontalGroup(
             jPanel85Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel85Layout.createSequentialGroup()
+                .addComponent(jLabelPeao1_Verde, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel85Layout.setVerticalGroup(
             jPanel85Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao1_Verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel86.setBackground(new java.awt.Color(0, 255, 0));
         jPanel86.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao4_Verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Verde.png")); // NOI18N
+        jLabelPeao4_Verde.setText("jLabel4");
+
         javax.swing.GroupLayout jPanel86Layout = new javax.swing.GroupLayout(jPanel86);
         jPanel86.setLayout(jPanel86Layout);
         jPanel86Layout.setHorizontalGroup(
             jPanel86Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel86Layout.createSequentialGroup()
+                .addComponent(jLabelPeao4_Verde, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel86Layout.setVerticalGroup(
             jPanel86Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao4_Verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel87.setBackground(new java.awt.Color(51, 255, 0));
         jPanel87.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao2_Verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Verde.png")); // NOI18N
+        jLabelPeao2_Verde.setText("jLabel4");
+
         javax.swing.GroupLayout jPanel87Layout = new javax.swing.GroupLayout(jPanel87);
         jPanel87.setLayout(jPanel87Layout);
         jPanel87Layout.setHorizontalGroup(
             jPanel87Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel87Layout.createSequentialGroup()
+                .addComponent(jLabelPeao2_Verde, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel87Layout.setVerticalGroup(
             jPanel87Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao2_Verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -576,57 +604,77 @@ public class jJogo extends javax.swing.JFrame {
         jPanel92.setBackground(new java.awt.Color(0, 0, 255));
         jPanel92.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao1_Azul.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Azul.png")); // NOI18N
+        jLabelPeao1_Azul.setText("jLabel8");
+
         javax.swing.GroupLayout jPanel92Layout = new javax.swing.GroupLayout(jPanel92);
         jPanel92.setLayout(jPanel92Layout);
         jPanel92Layout.setHorizontalGroup(
             jPanel92Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel92Layout.createSequentialGroup()
+                .addComponent(jLabelPeao1_Azul, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel92Layout.setVerticalGroup(
             jPanel92Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao1_Azul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel93.setBackground(new java.awt.Color(0, 0, 255));
         jPanel93.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao3_Azul.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Azul.png")); // NOI18N
+        jLabelPeao3_Azul.setText("jLabel8");
+
         javax.swing.GroupLayout jPanel93Layout = new javax.swing.GroupLayout(jPanel93);
         jPanel93.setLayout(jPanel93Layout);
         jPanel93Layout.setHorizontalGroup(
             jPanel93Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel93Layout.createSequentialGroup()
+                .addComponent(jLabelPeao3_Azul, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel93Layout.setVerticalGroup(
             jPanel93Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao3_Azul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel94.setBackground(new java.awt.Color(0, 0, 255));
         jPanel94.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao2_Azul.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Azul.png")); // NOI18N
+        jLabelPeao2_Azul.setText("jLabel8");
+
         javax.swing.GroupLayout jPanel94Layout = new javax.swing.GroupLayout(jPanel94);
         jPanel94.setLayout(jPanel94Layout);
         jPanel94Layout.setHorizontalGroup(
             jPanel94Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel94Layout.createSequentialGroup()
+                .addComponent(jLabelPeao2_Azul, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel94Layout.setVerticalGroup(
             jPanel94Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao2_Azul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel95.setBackground(new java.awt.Color(0, 0, 255));
         jPanel95.setPreferredSize(new java.awt.Dimension(47, 47));
 
+        jLabelPeao4_Azul.setIcon(new javax.swing.ImageIcon("C:\\Users\\Henrique\\Desktop\\Faculdade\\#Programação\\Java\\Jogo_Ludo\\Jogo_Ludo\\src\\main\\java\\icon\\Peao_Azul.png")); // NOI18N
+        jLabelPeao4_Azul.setText("jLabel8");
+
         javax.swing.GroupLayout jPanel95Layout = new javax.swing.GroupLayout(jPanel95);
         jPanel95.setLayout(jPanel95Layout);
         jPanel95Layout.setHorizontalGroup(
             jPanel95Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addGroup(jPanel95Layout.createSequentialGroup()
+                .addComponent(jLabelPeao4_Azul, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel95Layout.setVerticalGroup(
             jPanel95Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 47, Short.MAX_VALUE)
+            .addComponent(jLabelPeao4_Azul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -2133,7 +2181,7 @@ public class jJogo extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2157,16 +2205,12 @@ public class jJogo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void GirarDadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GirarDadoActionPerformed
-        
-        if(Iniciar == 1){
-            
-        }
-        else{
+
             R = Configuração.NumDado();
             ValorDado = Integer.toString(R);
             jLabelResultadoDado.setText(ValorDado);
             VerificarAcerto();
-        }
+       
     }//GEN-LAST:event_GirarDadoActionPerformed
 
     public static void main(String args[]) {
@@ -2197,6 +2241,8 @@ public class jJogo extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new jJogo().setVisible(true);
+                jJogo aux = new jJogo(); 
+                aux.DeixarInvisivel();
                 
             }
         });
@@ -2260,6 +2306,18 @@ public class jJogo extends javax.swing.JFrame {
         if(R == 6){
             ContarAcerto();
         }
+    }
+    
+    public void DeixarInvisivel(){
+        
+        jLabelPeao1_Azul.setVisible(false);
+        jLabelPeao2_Azul.setVisible(false);
+        jLabelPeao3_Azul.setVisible(false);
+        jLabelPeao4_Azul.setVisible(false);
+        jLabelPeao1_Verde.setVisible(false);
+        jLabelPeao2_Verde.setVisible(false);
+        jLabelPeao3_Verde.setVisible(false);
+        jLabelPeao4_Verde.setVisible(false);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -2344,6 +2402,14 @@ public class jJogo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelDadoPlayer1;
     private javax.swing.JLabel jLabelDadoPlayer2;
+    private javax.swing.JLabel jLabelPeao1_Azul;
+    private javax.swing.JLabel jLabelPeao1_Verde;
+    private javax.swing.JLabel jLabelPeao2_Azul;
+    private javax.swing.JLabel jLabelPeao2_Verde;
+    private javax.swing.JLabel jLabelPeao3_Azul;
+    private javax.swing.JLabel jLabelPeao3_Verde;
+    private javax.swing.JLabel jLabelPeao4_Azul;
+    private javax.swing.JLabel jLabelPeao4_Verde;
     private javax.swing.JLabel jLabelResultadoDado;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JLabel jLabelVezPlayer;
