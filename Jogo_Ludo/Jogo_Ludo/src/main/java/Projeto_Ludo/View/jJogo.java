@@ -2157,11 +2157,16 @@ public class jJogo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void GirarDadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GirarDadoActionPerformed
-
-        R = Configuração.NumDado();
-        ValorDado = Integer.toString(R);
-        jLabelResultadoDado.setText(ValorDado);
-        VerificarAcerto();
+        
+        if(Iniciar == 1){
+            
+        }
+        else{
+            R = Configuração.NumDado();
+            ValorDado = Integer.toString(R);
+            jLabelResultadoDado.setText(ValorDado);
+            VerificarAcerto();
+        }
     }//GEN-LAST:event_GirarDadoActionPerformed
 
     public static void main(String args[]) {
@@ -2200,25 +2205,26 @@ public class jJogo extends javax.swing.JFrame {
     public String ContarErrou(){
         x++;
         if(x%2 == 1){
-            jLabelVezPlayer.setText("Sua Vez Player 1!!");
-            jTextAreaJogada.setText("");jTextAreaJogada.setText("Você errou!! sua vez Player 1");
-            jLabelDadoPlayer2.setText("");jLabelDadoPlayer2.setText(ValorDado);
-            return "";
-        }
-        else{
             if(Iniciar == 1){
                 JOptionPane.showMessageDialog(rootPane, "Parabéns, você tirou 6 no dado e começara jogando...", "Jogador 1 Começa", -1);
                 jLabelDadoPlayer1.setVisible(false);
                 jLabelDadoPlayer2.setVisible(false);
                 jLabelResultadoDado.setText("???");
-                jTextAreaJogada.setText("");jTextAreaJogada.setText("Jogador 1, Lance o dado para o primeiro\n movimento...");
-                
+                jTextAreaJogada.setText("");jTextAreaJogada.setText("Jogador 1, Lance o dado para o primeiro\n movimento...");    
             }
             else{
+            jLabelVezPlayer.setText("Sua Vez Player 1!!");
+            jTextAreaJogada.setText("");jTextAreaJogada.setText("Você errou!! sua vez Player 1");
+            jLabelDadoPlayer2.setText("");jLabelDadoPlayer2.setText(ValorDado);
+            }
+            return "";
+        }
+        else{
+            
                 jLabelVezPlayer.setText("Sua Vez Player 2!!");
                 jTextAreaJogada.setText("");jTextAreaJogada.setText("Você errou!! sua vez Player 2");
                 jLabelDadoPlayer1.setText("");jLabelDadoPlayer1.setText(ValorDado);
-            }
+            
             
             return "";
         }
