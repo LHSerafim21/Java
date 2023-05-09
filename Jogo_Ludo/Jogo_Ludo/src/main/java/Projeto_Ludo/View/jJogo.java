@@ -2291,8 +2291,10 @@ public class jJogo extends javax.swing.JFrame {
             jTextAreaJogada.setText("");jTextAreaJogada.setText("Você Acertou e começara jogando!!");
             jLabelDadoPlayer2.setText("");jLabelDadoPlayer2.setText(ValorDado);
             JOptionPane.showMessageDialog(rootPane, "Parabéns, você tirou 6 no dado e começara jogando...", "Jogador 2 Começa", -1);
+          
             jLabelDadoPlayer1.setVisible(false);
             jLabelDadoPlayer2.setVisible(false);
+            
             jLabelResultadoDado.setText("???");
             jTextAreaJogada.setText("");jTextAreaJogada.setText("Jogador 2, Lance o dado para o primeiro\n movimento...");
         }

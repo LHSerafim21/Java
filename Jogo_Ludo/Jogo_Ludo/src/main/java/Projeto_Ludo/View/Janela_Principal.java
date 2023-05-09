@@ -214,6 +214,12 @@ public class Janela_Principal extends javax.swing.JFrame {
 
     private void jButtonConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConectarActionPerformed
         // TODO add your handling code here:
+        jConectar frame = new jConectar();
+        
+        frame.setVisible(true);
+        frame.setSize(1177,807);
+        dispose();
+        frame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButtonConectarActionPerformed
 
     private void jButtonSerHostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSerHostActionPerformed
