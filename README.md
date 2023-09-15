@@ -11,7 +11,7 @@
 </div>
 <div>
     <p>
-      Cada pasta é um projeto diferente, os projetos pertencentes a este repositorio foram todos desenvolvidos nas IDEs "NetBeans" e "intelliJ". Os repositorios foram organizados com as subpastas "Model", "Control" e "View".
+      Cada pasta é um projeto diferente, os projetos pertencentes a este repositorio foram todos desenvolvidos nas IDEs "NetBeans" e "intelliJ". Os repositorios foram organizados com as subpastas "Model" para as classes modelos, "Control" para os controladores e "View" para a interface.
     </p>
 </div>
 <div>
