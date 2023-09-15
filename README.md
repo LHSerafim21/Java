@@ -20,6 +20,15 @@
         - Comercio Eletronico
     </table>
     <table>
+        - Jogo do Ludo
+    </table>
+    <table>
+        - Simulação da fila de um banco
+    </table>
+    <table>
+        - Sistema de cadastro de uma biblioteca
+    </table>
+    <table>
         - Sistema de Imobiliaria
     </table>
 </div>
