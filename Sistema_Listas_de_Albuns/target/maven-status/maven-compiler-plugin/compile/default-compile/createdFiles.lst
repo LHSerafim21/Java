@@ -1,2 +1,3 @@
-com\mycompany\lista_de_albuns\resources\JakartaEE9Resource.class
-com\mycompany\lista_de_albuns\JakartaRestConfiguration.class
+com\API\Albuns\Model\Lista.class
+com\API\Albuns\Model\Usuario.class
+com\API\Albuns\Model\Album.class

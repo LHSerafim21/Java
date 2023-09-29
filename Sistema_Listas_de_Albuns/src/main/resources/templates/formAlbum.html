@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/login.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Adiconar Álbum</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/listas">Listas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="container">
+    <div id="child">
+        <div class="container px-5 my-5">
+            <form method="POST" class="needs-validation" id="loginForm">
+                <h3 id="nomeForm">Adicionar Nova Album a Lista</h3>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="tituloAlbum" type="text" name="tituloAlbum" placeholder="Título do Álbum" required/>
+                    <label for="tituloAlbum">Título do Álbum</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nomeArtistaAlbum" type="text" name="nomeArtistaAlbum" placeholder="Nome do Artista" required/>
+                    <label for="nomeArtistaAlbum">Nome do Artista</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="generoAlbum" type="text" name="generoAlbum" placeholder="Gênero" required/>
+                    <label for="generoAlbum">Gênero</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="anoLancamentoAlbum" type="number" value="2023" name="anoLancamentoAlbum" placeholder="Ano de Lançamento" required/>
+                    <label for="anoLancamentoAlbum">Ano de Lançamento</label>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                        Adicionar Álbum a Lista
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

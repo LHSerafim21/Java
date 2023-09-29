@@ -1,0 +1,24 @@
+#container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#child {
+    width: 35vw;
+    height: 100%;
+}
+
+
+.inputs-login {
+    width: 100%; 
+} 
+
+.buttons-login {
+    padding: 50%;
+}
+
+#nomeForm {
+    padding-bottom: 2%;
+}

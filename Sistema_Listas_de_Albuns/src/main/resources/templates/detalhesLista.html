@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/listas.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Listas de Álbuns</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/listas">Listas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="container" class="overflow-auto">
+    <a class="btn btn-primary" th:href="${(#mvc.url('AC#adicionarAlbum').arg(0, lista.idLista)).build()}">Adicionar
+        Álbum a Lista</a>
+    <div id="child">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Título Álbum</th>
+                <th scope="col">Nome do Artista</th>
+                <th scope="col">Gênero</th>
+                <th scope="col">Ano de Lançamento</th>
+                <th scope="col">Já Ouvi</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="album : ${lista.getAlbumCollection()}">
+                <td scope="row">
+                    <span th:text="${albumStat.index}"></span>
+                </th>
+                <td>
+                    <span th:text="${album.tituloAlbum}"></span>
+                </td>
+                <td>
+                    <span th:text="${album.nomeArtistaAlbum}"></span>
+                </td>
+                <td>
+                    <span th:text="${album.generoAlbum}"></span>
+                </td>
+                <td>
+                    <span th:text="${album.anoLancamentoAlbum}"></span>
+                </td>
+                <td>
+                    <form method="POST">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

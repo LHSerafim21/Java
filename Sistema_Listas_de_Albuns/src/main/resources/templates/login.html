@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/login.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Login</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/listas">Listas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="container">
+    <div id="child">
+        <div class="container px-5 my-5">
+            <form class="needs-validation" id="loginForm">
+                <h3 id="nomeForm">Login</h3>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nomeDeUsuario" type="text" placeholder="Nome de Usuário" required/>
+                    <label for="nomeDeUsuario">Nome de Usuário</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="senha" type="password" placeholder="Senha" required/>
+                    <label for="senha">Senha</label>
+
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                        Entrar
+                    </button>
+                </div>
+            </form>
+            <br>
+            <div class="d-grid">
+                <a id="btn-cadastrar" class="btn btn-secondary btn-lg" href="/cadastrar" role="button">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
