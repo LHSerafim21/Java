@@ -1,0 +1,118 @@
+/* 
+    Created on : 8 de jun. de 2023, 17:39:01
+    Author     : Luiz Henrique Serafim, Igor Jose, Lucas Ikeda, Raphael Esposti
+*/
+
+input[type='file']{
+    display: none;
+}
+
+.LarguraMaxima{
+    max-width: 200px;
+    width: 100%;
+}
+
+.Menu{
+    background-image: url("../Assets/fundo.png");
+    background-size: cover;
+}
+
+.Logo{
+    padding-left: 3%;
+    padding-right: 40%
+}
+
+.Cabeçalho{
+   display: flex;
+   justify-content: space-between;
+   padding-right: 15%;
+   padding-top:2%;
+   align-items: center;
+}
+
+.Bem_Vindo{
+    width: 500px;
+    color:rgb(228, 225, 220);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 12%;
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.Estilo{
+    font-size: 20px;
+}
+
+.Fundo{
+    background-color: black;
+    background-size: cover;
+}
+
+.Area_Listas{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Fundo_Listas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+.Espaçamento_Vertical{
+    background-color: darkorange;
+    width: 5px;
+    height: 65vh;
+    padding-top: 5%;
+}
+
+.Espaçamento_Horizontal{
+    background-color: darkorange;
+    width: 80vh;
+    height: 5px;   
+}
+
+.foto-criar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Texto_Pagina{
+    color: darkorange;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Separação{
+    display: flex;
+    flex-direction: column;
+}
+
+.Photo{
+    margin-top: 10%;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    border: 5px solid #ccc;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#Photo:hover{
+    background-color: rgb(180,180,180);
+    border: 5px solid #111;
+}
+
+.CRIAR{
+    margin-top: 10%;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
